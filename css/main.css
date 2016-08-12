@@ -30,7 +30,7 @@ header {
 }
 
 section {
-	max-height: 95px;
+	max-height: 100px;
 	overflow: hidden;
 }
 
@@ -44,7 +44,7 @@ a {
 	text-decoration: none;
 }
 
-h2 { padding: 10%; }
+h2 { padding: 38px 0px; }
 
 #projects {
 	background: #ccd4da;
@@ -52,6 +52,12 @@ h2 { padding: 10%; }
 
 #about {
 	background: #b5c1ca;
+}
+
+#my-face {
+	background-image: url("../img/ashleigh.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #contact {
