@@ -30,7 +30,7 @@ header {
 }
 
 section {
-	max-height: 100px;
+	height: 100px;
 	overflow: hidden;
 }
 
@@ -45,6 +45,7 @@ a {
 }
 
 h2 { padding: 38px 0px; }
+h2:hover { opacity: .3; }
 
 #projects {
 	background: #ccd4da;
