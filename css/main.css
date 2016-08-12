@@ -32,6 +32,8 @@ header {
 section {
 	height: 100px;
 	overflow: hidden;
+	-webkit-transition: all 600ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition:         all 600ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
 li {
@@ -47,6 +49,21 @@ a {
 h2 { padding: 38px 0px; }
 h2:hover { opacity: .3; }
 
+h4 {
+	padding: 5%;
+	font-size: 1.25em;
+}
+span {
+		font-size: 1.5em;
+/*		color: #b8afa6;*/
+}
+
+p {
+	padding: 7%;
+	border: 1px solid black;
+	margin: 5%;
+}
+
 #projects {
 	background: #ccd4da;
 }
@@ -56,9 +73,14 @@ h2:hover { opacity: .3; }
 }
 
 #my-face {
+	margin: 0px 40%;
+	border: 1px solid #e4d9e5;
+  border-radius: 70px;
 	background-image: url("../img/ashleigh.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+  height: 140px; width: 140px;
 }
 
 #contact {
@@ -67,7 +89,13 @@ h2:hover { opacity: .3; }
 	background-repeat: no-repeat;
 }
 
-#contact > ul:nth-child(0) { font-family: github; }
-#contact > ul:nth-child(1) { font-family: email; }
-#contact > ul:nth-child(2) { font-family: linkedin; }
+#contact > ul:nth-child(0)::before { font-family: github; }
+#contact > ul:nth-child(1)::before { font-family: email; }
+#contact > ul:nth-child(2)::before { font-family: linkedin; }
 
+
+#enigmatic      { background-image: url('../img/enigmatic.png'); }
+#medtrakr       { background-image: url('../img/medtrakr.png'); }
+#connectfour    { background-image: url('../img/connectfour.png'); }
+#space          { background-image: url('../img/planets.png'); }
+#oli-and-olive  { background-image: url('../img/oliandolive.png'); }
