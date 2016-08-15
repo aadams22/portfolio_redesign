@@ -11,6 +11,12 @@ $(function(){
 		$(this).animate( {height: "100px"}, 0);
 	});
 	
+	$("header")
+	.click(function(e){
+		console.log("header");
+		$("section").animate( {height: "100px"}, 0);
+	});
+
 
 });
 
