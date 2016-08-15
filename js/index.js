@@ -5,18 +5,30 @@ $(function(){
 	$("section")
 	.mouseover(function(e){
 		console.log("it clicked");
-		$(this).animate( {height: "800px"}, 0);
+		$(this).animate( { height: "800px" }, 0);
 	})
 	.mouseleave(function(e){
-		$(this).animate( {height: "100px"}, 0);
+		$(this).animate( { height: "100px" }, 0);
 	});
 	
+	//!! USE FOR DEVELOPMENT !!
+	// $("section")
+	// .click(function(e){
+	// 	console.log("header");
+	// 	$(this).animate( { height: "800px" }, 0);
+	// });
+
+
+	//for mobile device to close all tabs
 	$("header")
 	.click(function(e){
 		console.log("header");
-		$("section").animate( {height: "100px"}, 0);
+		$("section").animate( { height: "100px" }, 0);
 	});
 
+	$("img").hover(function(){
+		console.log("this ", $(this));
+		$(this).children().toggleClass("disabled");
+	});
 
 });
-
