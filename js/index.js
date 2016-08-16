@@ -1,4 +1,4 @@
-console.log('hello world');
+// console.log('hello world');
 $(function(){
 	// var skills = ["HTML5", "CSS3", "C", "Arduino", "Javascript", "jQuery", "AngularJS", "Ruby", "Rails", "MySql", "PostGreSQL", "MongoDB", "php", "WordPress"];	
 
@@ -11,7 +11,7 @@ $(function(){
 		$(this).animate( { height: "100px" }, 0);
 	});
 	
-	//!! USE FOR DEVELOPMENT !!
+	//!! USE FOR DEVELOPMENT !!x
 	// $("section")
 	// .click(function(e){
 	// 	console.log("header");
