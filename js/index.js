@@ -11,12 +11,12 @@ $(function(){
 		$(this).animate( { height: "100px" }, 0);
 	});
 	
-	!! USE FOR DEVELOPMENT !!x
-	$("section")
-	.click(function(e){
-		console.log("header");
-		$(this).animate( { height: "800px" }, 0);
-	});
+	// !! USE FOR DEVELOPMENT !!x
+	// $("section")
+	// .click(function(e){
+	// 	console.log("header");
+	// 	$(this).animate( { height: "800px" }, 0);
+	// });
 
 
 	//for mobile device to close all tabs
@@ -26,8 +26,9 @@ $(function(){
 		$("section").animate( { height: "100px" }, 0);
 	});
 
-	$("img").hover(function(){
-		console.log("this ", $(this));
+
+	$("#projects-container > div").hover(function(){
+		// console.log("this ", $(this));
 		$(this).children().toggleClass("disabled");
 	});
 
