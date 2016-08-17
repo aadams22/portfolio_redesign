@@ -5,17 +5,20 @@ $(function(){
 	.mouseover(function(e){
 		//creates hash
 		var h = "#" + $(this).attr("id");
-		//causes the section to grow
-		$(this).animate( { height: "800px" }, 0);
+		
 		//scrolls down to the div on which the user has hovered
 		$("html, body").animate({
 			scrollTop: $(h).offset().top
-		}, 1000);
+		}, 100);
+
+		//causes the section to grow
+		$(this).animate( { height: "800px" }, 0);
 
 	})
 	.mouseleave(function(e){
 		//causes the section to become smaller
 		$(this).animate( { height: "100px" }, 0);
+		h = "";
 	});
 
 	//for mobile device to close all tabs
