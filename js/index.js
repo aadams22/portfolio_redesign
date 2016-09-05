@@ -7,12 +7,16 @@ $(function(){
 		var h = "#" + $(this).attr("id");
 		
 		//scrolls down to the div on which the user has hovered
-		$("html, body").animate({
-			scrollTop: $(h).offset().top
-		}, 100);
+		// $("html, body").animate({
+		// 	scrollTop: $(h).offset().top
+		// }, 100);
 
 		//causes the section to grow
-		$(this).animate( { height: "800px" }, 0);
+		if(h == "#projects") { 
+			$(this).animate( { height: "1020px" }, 0);
+		}else { 
+			$(this).animate( { height: "800px" }, 0);
+		}
 
 	})
 	.mouseleave(function(e){
