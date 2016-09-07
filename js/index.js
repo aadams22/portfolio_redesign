@@ -3,7 +3,6 @@ $(function(){
 
 	$("section")
 	.mouseover(function(e){
-		var hasSlid = 0;
 		//creates hash
 		var id = "#" + $(this).attr("id");
 		
@@ -16,20 +15,22 @@ $(function(){
 		//causes the section to grow 
 		$(this).animate( { height: h }, 0);
 
-		if (!hasSlid) {
-			// scrolls down to the div on which the user has hovered
-			$("html, body").animate({
-				scrollTop: $(id).offset().top
-			}, 100);
-		};
-		hasSlid = 1;
+		//!!as long as you hover it requires the page to be at 
+		//!!the top not allowing the user to scroll down the page.
+		//!!need better solution
+		// if (!hasSlid) {
+		// 	// scrolls down to the div on which the user has hovered
+		// 	$("html, body").animate({
+		// 		scrollTop: $(id).offset().top
+		// 	}, 100);
+		// };
+		// hasSlid = 1;
  
 	})
 	.mouseleave(function(e){
 		//causes the section to become smaller
 		$(this).animate( { height: "100px" }, 0);
 		id = "";
-		hasSlid = 0;
 	});
 
 	//for mobile device to close all tabs
