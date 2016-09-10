@@ -7,10 +7,9 @@ $(function(){
 		var id = "#" + $(this).attr("id");
 		
 		//!!Should probably move this to a class toggle situation...will do later.
-		var h = 0;
-		if(id == "#projects") h = "1020px";
-		else if(id == "#contact") h = "500px";
-		else h = "800px";
+		var h = null;
+		if(id == "#contact") h = "500px";
+		else h = "100%";
 
 		//causes the section to grow 
 		$(this).animate( { height: h }, 0);
