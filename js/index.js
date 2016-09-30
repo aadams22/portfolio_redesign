@@ -1,4 +1,5 @@
 
+
 $(function(){
 
 	$("section")
@@ -9,10 +10,12 @@ $(function(){
 		//!!Should probably move this to a class toggle situation...will do later.
 		var h = null;
 		if(id == "#contact") h = "500px";
-		else h = "100%";
+		//using this form so that no content will be covered and we will still get the easing
+		else h = $(id)[0].scrollHeight;
 
 		//causes the section to grow 
-		$(this).animate( { height: h }, 0);
+		$(this).animate( { height: h }, {duration: 500}, {easing: "easeInCubic"});
+
 
 		//!!as long as you hover it requires the page to be at 
 		//!!the top not allowing the user to scroll down the page.
@@ -28,7 +31,7 @@ $(function(){
 	})
 	.mouseleave(function(e){
 		//causes the section to become smaller
-		$(this).animate( { height: "100px" }, 0);
+		$(this).animate( { height: "100px" }, {duration: 600}, {easing: "easeInCubic"});
 		id = "";
 	});
 
@@ -42,5 +45,7 @@ $(function(){
 	$("#projects-container > div").hover(function(){
 		$(this).children().toggleClass("disabled");
 	});
+
+
 
 });

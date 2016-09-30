@@ -44,13 +44,16 @@ header {
   font-size: 1em;
 }
 
-section {
+section {  
   height: 100px;
   overflow: hidden;
-  -webkit-transition: all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+/*  -webkit-transition: all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition:         all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition:    all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -ms-transition:     all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition:      all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);*/
 }
- 
+
 li {
   list-style: none;
   display: inline-block;
@@ -143,12 +146,12 @@ li:nth-of-type(4) > a { font-family: download; }
 
 /*OVERLAY*/
 .overlay {
-    position: absolute;
-    z-index: 3;
-    background-color: #eef1f3;
-    opacity: .9;
-    height: 200px; width: 240px;
-    font-size: 1.5em;
+  position: absolute;
+  z-index: 3;
+  background-color: #eef1f3;
+  opacity: .9;
+  height: 200px; width: 240px;
+  font-size: 1.5em;
 }
 
 .overlay > ul { 
