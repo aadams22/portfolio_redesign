@@ -14,7 +14,7 @@ $(function(){
 		else h = $(id)[0].scrollHeight;
 
 		//causes the section to grow 
-		$(this).animate( { height: h }, {duration: 500}, {easing: "easeInCubic"});
+		$(this).animate( { height: h }, {duration: 800}, {easing: "easeInSine"});
 
 
 		//!!as long as you hover it requires the page to be at 
@@ -31,7 +31,7 @@ $(function(){
 	})
 	.mouseleave(function(e){
 		//causes the section to become smaller
-		$(this).animate( { height: "100px" }, {duration: 600}, {easing: "easeInCubic"});
+		$(this).animate( { height: "100px" }, {duration: 800}, {easing: "easeOutSine"});
 		id = "";
 	});
 
